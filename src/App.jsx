@@ -32,7 +32,7 @@ const copyClip = ()=>{
   setCopy("Copied!");
   setTimeout(()=>{
     setCopy("Copy")
-  },5000)
+  },1000)
   }
 }
 
@@ -58,7 +58,7 @@ const copyClip = ()=>{
 
           <div className="flex items-center justify-between">
             <label className="text-sm font-medium sm:text-lg">Password Length</label>
-            <input type="range" min="6" value={range} max="20" onChange={(e)=>{setRange(e.target.value)}} className="w-3/10 sm:w-5/10 text-white scale-125 accent-amber-600" />
+            <input type="range" min="6" value={range} max="20" onChange={(e)=>{setRange(e.target.value)}} className="w-3/10 sm:w-4/10 text-white scale-125 accent-amber-600" />
             <span className='w-1'>{range}</span>
           </div>
 
